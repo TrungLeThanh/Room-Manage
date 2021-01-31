@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top {{#unless isHome}} bg-light {{/unless}} ">
+    <div class="container header-container">
+      <a class="navbar-brand" href="/">
+        <img id="logo" 
+        src="/image/logo.png" 
+        style="width: 45%; height: 100%;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse menu-style" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto navbar-nav-custom">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news/post">Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news/find-partner">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/features/top-up">Manage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/features/top-up">Manage</a>
+          </li>
+          <li class="nav-item dropdown  nav-item-user" style="padding-left:80px;">
+            <a class="nav-link dropdown-toggle nav-link-user" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="https://scontent.fdad3-2.fna.fbcdn.net/v/t1.0-9/83734544_2579279965648306_2181350637655031808_o.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=3Dpwo2U3k00AX_nsH6S&_nc_ht=scontent.fdad3-2.fna&oh=f751f6e50f4e4ad82deda518bb2928bb&oe=5FE3C0AF" alt="" class="user-img-header">
+              Thanh Trung
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Edit profile</a>
+              <a class="dropdown-item" href="#">Manage Post</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    
+
+    $(window).on("scroll", function () {
+          if ($(window).scrollTop() > 65) {
+              $("#logo").attr("src", "/src/public/image/logo3.svg");
+              $(".navbar").addClass("bg-light");
+              $(".navbar").css('box-shadow', '0px 0px 15px 0px rgba(0,0,0,0.1)');
+          } else {
+              //remove the background property so it comes transparent again 
+              $("#logo").attr("src", "/src/public/image/logo3.svg");
+              $(".navbar").removeClass("bg-light");
+              $(".navbar").css('box-shadow', 'none');
+          }
+      });
+  </script>
+
+</body>
+</html>
+
+
+
