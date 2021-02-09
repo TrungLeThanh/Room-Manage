@@ -4,24 +4,50 @@
     box-sizing: border-box;
 }
 
+/*
+*TOP
+*/
+
 .top{
     width:100%;
-    height: 750px;
+    height: 100vh;
+    text-align: center;
 }
 
-.middle{
-    width:100%;
-    height: 1550px;
+.btn-1{
+    position: relative;
+    top: -300px;
+    z-index: 100;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    /* flex: 1 1 auto; */
+    line-height: 35px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 3px 3px 3px rgb(175, 175, 175);
+    border-radius: 10px;
+    /* background-image: linear-gradient(to right, #ece6d0 0%, #705f5b 51%, #f1e0a5 100%); */
+}
+
+.btn-1:hover {
+    background-image: linear-gradient(to right, #ece6d0 0%, #705f5b 51%, #f1e0a5 100%);
+    background-position: right center; /* change the direction of the change here */
 }
 
 .carousel-inner{
     width:100%;
-    height: 750px;
+    height: 100vh;
 }
 
 .carousel-inner-image{
     width:100%;
-    height: 750px;
+    height: 100vh;
+  /* opacity: 0.95; */
 }
 
 .carousel-caption{
@@ -30,39 +56,34 @@
 
 .line-1{
     font-size:35px;
-    color: #fff;
-    font-family: monospace;
+    color: #FCFCFC;
+    font-family: 'Asap', sans-serif;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .12em; /* Adjust as needed */
+    font-weight: 400;    
 }
 
-/* Animation */
+
 .anim-typewriter{
-    animation: typewriter 3s steps(36) 1s 1 normal both,
-            blinkTextCursor 500ms steps(44) infinite normal,
-            blink-caret .5s step-end infinite;
-}
-@keyframes typewriter{
+    animation: typewriter 3s steps(44) 1s 1 normal both,
+            blinkTextCursor 500ms steps(44) infinite normal;
+    }
+    @keyframes typewriter{
     from{width: 0;}
-    to{width: 27em;}
-}
-@keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
+    to{width: 26em;}
+    }
+    @keyframes blinkTextCursor{
+    from{border-right-color: rgb(255, 255, 255);}
     to{border-right-color: transparent;}
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-}
+    }
 
 .line-2{
     font-size:35px;
-    color: #fff;
-    font-family: monospace;
+    color: #FCFCFC;
+    font-family: 'Asap', sans-serif;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -70,22 +91,212 @@
     letter-spacing: .12em; /* Adjust as needed */
 }
 
-/* Animation */
+
 .anim-typewriter1{
     animation: typewriter 3s steps(30) 3.5s 1 normal both,
-            blinkTextCursor 500ms steps(44) infinite normal,
-            blink-caret .5s step-end infinite;
-}
-@keyframes typewriter{
+            blinkTextCursor 500ms steps(44) infinite normal;
+    }
+    @keyframes typewriter{
     from{width: 0;}
     to{width: 25em;}
-}
-@keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
+    }
+    @keyframes blinkTextCursor{
+    from{border-right-color: transparent;}
     to{border-right-color: transparent;}
+    }
+
+
+/*
+*MIDDLE
+*/
+.middle{
+    width: 100%;
+    height: 700px;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(250,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='3.3'%3E%3Cpath transform='translate(-78.75 18) rotate(11.25 1409 581) scale(1.045)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='1.1' transform='translate(-45 45) rotate(13.5 800 450) scale(1.023)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(40.5 -135) rotate(135 401 736) scale(1.023)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1'%3E%3Cpath transform='translate(270 -18) rotate(4.5 150 345) scale(0.955)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='2.2' transform='translate(-180 -112.5) rotate(162 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-270 90) rotate(27 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed; 
+    background-size: cover; */
 }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+/* Title */
+.title{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    padding: 3em 0 2em 0;
+}
+
+.hr:after{
+    font-size : 4em;
+    color: black;
+    content: "—";
+}
+
+/* /title */
+
+
+.row{
+    width:94%;
+    margin-left: 3%;
+}
+
+.format-col{
+    border:1px solid black;
+    height: 500px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}
+
+ /*
+ *
+ */
+
+.bottom{
+    width:100%;
+    height: 150px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35),rgba(0,0,0,0.35)), url(/image/bot1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.mobile{
+    width:100%;
+    height: 300px;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+/*
+*RESPONSIVE
+*/
+
+@media (min-width: 768px) and (max-width:1024px){
+    .line-1,
+    .line-2{
+        font-size:25px;
+    }
+
+    .top{
+        height: 750px;
+    }
+
+    .carousel-inner-image{
+        height: 750px;
+    }
+
+    .carousel-inner{
+        height: 750px;
+    }
+
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 22em;}
+    }
+
+    @keyframes typewriter1{
+        from{width: 0;}
+        to{width: 20em;}
+    }
+}
+
+@media (max-width: 599px){
+    
+    .top{
+        width:100%;
+        height: 500px;
+    }
+
+    .middle{
+        width:100%;
+        height: 1550px;
+    }
+
+    .carousel-inner{
+        width:100%;
+        height: 500px;
+    }
+
+    .carousel-inner-image{
+        width:100%;
+        height: 500px;
+    }
+
+    .carousel-caption{
+        padding-bottom: 150px;
+    }
+
+    .btn-1{
+        top: -200px;
+    }
+}
+
+@media (min-width: 600px) and (max-width:767px){
+    .line-1,
+    .line-2{
+        font-size:21px;
+    }
+
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 20em;}
+    }
+
+    @keyframes typewriter1{
+        from{width: 0;}
+        to{width: 18em;}
+    }
+    .top{
+        height: 750px;
+    }
+
+    .carousel-inner-image{
+        height: 750px;
+    }
+
+    .carousel-inner{
+        height: 750px;
+    }
+}
+
+@media (max-width: 415px){
+    .line-1,
+    .line-2{
+        font-size:15px;
+    }
+
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 18em;}
+    }
+
+    @keyframes typewriter1{
+        from{width: 0;}
+        to{width: 15em;}
+    }
+
+    .btn-1{
+        top: -130px;
+        width:100px;
+    }
+
+    .carousel-caption{
+        padding-bottom: 200px;
+    }
 }
