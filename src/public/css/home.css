@@ -70,8 +70,18 @@
     @keyframes blinkTextCursor{
     from{border-right-color: transparent;}
     to{border-right-color: transparent;}
-    }
+}
 
+.btn-cus{
+    margin-top: 3%;
+    padding: 10px 20px 10px 20px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.btn-test{
+    margin-top: 50px;
+}
 
 /*
 *MIDDLE
@@ -173,6 +183,14 @@
         from{width: 0;}
         to{width: 20em;}
     }
+
+    .btn-cus{
+        padding: 7px 13px 7px 13px;
+    }
+
+    .btn-test{
+        margin-top: 45px;
+    }
 }
 
 @media (max-width: 599px){
@@ -185,6 +203,15 @@
     .middle{
         width:100%;
         height: 1550px;
+    }
+
+    .btn-cus{
+        padding: 5px 10px 5px 10px;
+    }
+
+    .btn-test{
+        margin-top: 35px;
+        font-size: 12px;
     }
 
 }
@@ -208,12 +235,12 @@
         height: 750px;
     }
 
-    .carousel-inner-image{
-        height: 750px;
+    .btn-cus{
+        padding: 7px 13px 7px 13px;
     }
 
-    .carousel-inner{
-        height: 750px;
+    .btn-test{
+        margin-top: 45px;
     }
 }
 
@@ -242,3 +269,4 @@
         padding-bottom: 200px;
     }
 }
+
