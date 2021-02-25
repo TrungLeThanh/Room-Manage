@@ -12,46 +12,9 @@
     width:100%;
     height: 100vh;
     text-align: center;
-}
-
-.btn-1{
-    position: relative;
-    top: -300px;
-    z-index: 100;
-    width: 120px;
-    height: 45px;
-    text-align: center;
-    /* flex: 1 1 auto; */
-    line-height: 35px;
-    text-align: center;
-    /* text-transform: uppercase; */
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
-    box-shadow: 3px 3px 3px rgb(175, 175, 175);
-    border-radius: 10px;
-    /* background-image: linear-gradient(to right, #ece6d0 0%, #705f5b 51%, #f1e0a5 100%); */
-}
-
-.btn-1:hover {
-    background-image: linear-gradient(to right, #ece6d0 0%, #705f5b 51%, #f1e0a5 100%);
-    background-position: right center; /* change the direction of the change here */
-}
-
-.carousel-inner{
-    width:100%;
-    height: 100vh;
-}
-
-.carousel-inner-image{
-    width:100%;
-    height: 100vh;
-  /* opacity: 0.95; */
-}
-
-.carousel-caption{
-    padding-bottom: 350px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)) ,url('https://images.pexels.com/photos/2950003/pexels-photo-2950003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
 }
 
 .line-1{
@@ -64,7 +27,11 @@
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .12em; /* Adjust as needed */
     font-weight: 400;    
+    /* line-height: 60vh; */
+    padding-top: 35vh;
 }
+
+
 
 
 .anim-typewriter{
@@ -197,14 +164,6 @@
         height: 750px;
     }
 
-    .carousel-inner-image{
-        height: 750px;
-    }
-
-    .carousel-inner{
-        height: 750px;
-    }
-
     @keyframes typewriter{
         from{width: 0;}
         to{width: 22em;}
@@ -228,23 +187,6 @@
         height: 1550px;
     }
 
-    .carousel-inner{
-        width:100%;
-        height: 500px;
-    }
-
-    .carousel-inner-image{
-        width:100%;
-        height: 500px;
-    }
-
-    .carousel-caption{
-        padding-bottom: 150px;
-    }
-
-    .btn-1{
-        top: -200px;
-    }
 }
 
 @media (min-width: 600px) and (max-width:767px){

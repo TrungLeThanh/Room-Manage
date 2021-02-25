@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/header.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 </head>
 <body> 
 
-  <nav class="nav">
+    <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="#"><img id="logo" src="/image/logo.png" style="width: 160px; height: 30px;"></a>
+                <a href="#">
+                    <img id="logo" src="/image/logo.png" style="width: 160px; height: 35px; color: white;">
+                </a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
@@ -34,25 +38,25 @@
 
     <script>
         $(window).scroll(function() {
-            if ($(document).scrollTop() > 100) {
+            if ($(document).scrollTop() > 80) {
                 $('.nav').addClass('affix');
                 var c = document.querySelectorAll(".a");
                 for(var i = 0; i < c.length;i++){
-                  c[i].style="color:black;";
+                    c[i].style="color:black;";
                 }
             } else {
                 $('.nav').removeClass('affix');
                 var d = document.querySelectorAll(".a");
                 for(var i = 0; i < d.length;i++){
-                  d[i].style="color:white;";
+                    d[i].style="color:white;";
                 }
             }
         });
 
         $('.navTrigger').click(function () {
-          $(this).toggleClass('active');
-          $("#mainListDiv").toggleClass("show_list");
-          $("#mainListDiv").fadeIn();
+            $(this).toggleClass('active');
+            $("#mainListDiv").toggleClass("show_list");
+            $("#mainListDiv").fadeIn();
         });
 
     </script>

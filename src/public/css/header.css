@@ -6,6 +6,9 @@
     line-height: 65px;
     text-align: center;
     z-index: 1000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .nav div.logo {
