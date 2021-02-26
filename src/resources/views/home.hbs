@@ -17,10 +17,10 @@
                 <div class="content__text">
                     <p class="line-1 anim-typewriter">MANAGE THE ROOM FOR RENT WITH </p>
                     <p class="line-2 anim-typewriter1">PHONG TRO TOT...</p>
-                    <button type="button" class="btn btn-outline-warning mr-2 pt-2 pb-2 btn-test" data-aos="zoom-in-right" data-aos-duration="1500">Experience</button>
+                    <button type="button" class="btn btn-outline-warning mr-2 pt-2 pb-2 btn-test" data-aos="zoom-in-right" data-aos-duration="1500" data-toggle="tooltip" data-placement="top" title="You will get a free experience for a month">Experience</button>
                     <button type="button" class="btn btn-outline-warning ml-2 pt-2 pb-2 btn-test" data-aos="zoom-in-left" data-aos-duration="1500">Registration</button><br>
                     <div class="social" data-aos="zoom-in" data-aos-duration="2500">
-                        <button type="button" class="btn btn-primary btn-cus"><i class="fab fa-facebook-f"></i></button>
+                        <button type="button" class="btn btn-primary btn-cus"><i class="fab fa-facebook-f" ></i></button>
                         <button type="button" class="btn btn-danger btn-cus"><i class="fab fa-instagram"></i></button>
                         <button type="button" class="btn btn-primary btn-cus"><i class="fas fa-phone-volume"></i></button>
                         <button type="button" class="btn btn-danger btn-cus"><i class="fab fa-youtube-square"></i></button>
@@ -38,7 +38,7 @@
         <div class="middle" id="aa">
             <div class="title" data-aos="fade-down" data-aos-duration="2500">
                 <h3>&#10097;&nbsp; MAIN FEATURE &nbsp;&#10096;</h3>
-                <p>----------------------------------------------------------</p>
+                <p>-----------------------------------------------------</p>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 format-col">
@@ -47,7 +47,7 @@
                         <div class="card__text">
                             <h6 style="text-align:center;">&#10093; MONEY MANAGEMENT &#10092;</h6>
                             <p class="card__text--p">Every month, when you close the bill of rent, service fee, tenant will receive notification through the application.</p>
-                            <a href="" style="float: right;">&#10137;</a>
+                            <a href="" style="float: right;" data-toggle="tooltip" data-placement="right" title="Detail!">&#10137;</a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                         <div class="card__text">
                             <h6 style="text-align:center;">&#10093; MANAGE CUSTOMERS &#10092;</h6>
                             <p class="card__text--p">Every month, when you close the bill of rent, service fee, tenant will receive notification through the application.</p>
-                            <a href="" style="float: right;">&#10137;</a>
+                            <a href="" style="float: right;" data-toggle="tooltip" data-placement="right" title="Detail!">&#10137;</a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                         <div class="card__text">
                             <h6 style="text-align:center;">&#10093; BILL MANAGEMENT &#10092;</h6>
                             <p class="card__text--p">Every month, when you close the bill of rent, service fee, tenant will receive notification through the application.</p>
-                            <a href="" style="float: right;">&#10137;</a>
+                            <a href="" style="float: right;" data-toggle="tooltip" data-placement="right" title="Detail!">&#10137;</a>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                         <div class="card__text">
                             <h6 style="text-align:center;">&#10093; MANAGE ROOMS &#10092;</h6>
                             <p class="card__text--p">Every month, when you close the bill of rent, service fee, tenant will receive notification through the application.</p>
-                            <a href="" style="float: right;">&#10137;</a>
+                            <a href="" style="float: right;" data-toggle="tooltip" data-placement="right" title="Detail!">&#10137;</a>
                         </div>
                     </div>
                 </div>
@@ -86,6 +86,10 @@
 
 
     </div>
-    
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
 </body>
 </html>
