@@ -83,7 +83,7 @@
 
 .btn-cus{
     margin-top: 3%;
-    padding: 8px 15px 8px 15px;
+    padding: 6px 12px 6px 12px;
     margin-left: 10px;
     border-radius: 15px;
     transition: 0.3s;
@@ -157,9 +157,20 @@
 
 /* Title */
 .title{
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Cinzel', serif;
     text-align: center;
     padding: 4em 0 2em 0;
+}
+
+.slogan{
+    font-family: 'Hind', sans-serif;
+    margin-left: -1.5em;
+    cursor: pointer;
+}
+
+.slogan i{
+    margin-left: 1.5em;
 }
 
 
@@ -183,7 +194,7 @@
     width:80%;
     height:80%;
     /* border:1px solid black; */
-    transition: 0.5s;
+    transition: 0.45s;
     border-radius: 20px;
     margin: 5% 0 0 5%;
     box-shadow: 5px 5px 5px rgb(228, 228, 228);
@@ -229,6 +240,27 @@
 .card__text--p{
     padding: 1em 1em 0 1.5em;
 }
+
+
+/* Bottom */
+
+.bottom{
+    width: 100%;
+    height:250px; 
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* Mobile */
+.mobile{
+    width: 100%;
+    height: 400px;
+}
+
+
 
 /*
 *RESPONSIVE
