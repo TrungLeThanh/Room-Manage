@@ -81,6 +81,25 @@
     margin-top: -10%;
 }
 
+.fa-angle-right{
+    color: #fff;
+    font-size:25px;
+    transition: 0.8s;
+    padding-bottom: 10px;
+}
+
+.fa-angle-left{
+    color: #fff;
+    font-size:25px;
+    transition: 0.8s;
+    padding-top: 10px;
+    display:none;
+}
+
+/* .fa-angle-right:hover{
+    transform: rotate(180deg);
+} */
+
 .btn-cus{
     margin-top: 3%;
     padding: 6px 12px 6px 12px;

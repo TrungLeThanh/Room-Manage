@@ -23,11 +23,13 @@
                     <p class="line-2 anim-typewriter1">PHONG TRO TOT...</p>
                     <button type="button" class="btn btn-outline-warning mr-2 pt-2 pb-2 btn-test" data-aos="zoom-in-right" data-aos-duration="2500" data-toggle="tooltip" data-placement="left" title="You will get a free experience for a month">Experience</button>
                     <button type="button" class="btn btn-outline-warning ml-2 pt-2 pb-2 btn-test" data-aos="zoom-in-left" data-aos-duration="2500">Registration</button><br>
-                    <div class="social" data-aos="zoom-in" data-aos-duration="2500">
+                    <div class="social" data-aos="zoom-in" data-aos-duration="2500"> 
+                        <i class="fas fa-angle-right"></i>
                         <button type="button" class="btn btn-primary btn-cus"><i class="fab fa-facebook-f" ></i></button>
                         <button type="button" class="btn btn-danger btn-cus"><i class="fab fa-instagram"></i></button>
                         <button type="button" class="btn btn-primary btn-cus"><i class="fas fa-phone-volume"></i></button>
                         <button type="button" class="btn btn-danger btn-cus"><i class="fab fa-youtube-square"></i></button>
+                        <i class="fas fa-angle-left"></i>
                     </div>
                     <div class="down" data-aos="fade-down" data-aos-duration="1500">
                         <a href="#aa">
@@ -154,7 +156,25 @@
     </div>
     <script>
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();   
+            $('[data-toggle="tooltip"]').tooltip();
+
+            $('.fa-angle-right').click(function(){
+                var a = document.querySelectorAll('.btn-cus');
+                for(let i = 0; i < a.length;i++){
+                    a[i].style = "display: none;";
+                }
+                document.querySelector('.fa-angle-left').style="display: block;"
+                document.querySelector('.fa-angle-right').style="display: none;"
+            });
+
+            $('.fa-angle-left').click(function(){
+                var a = document.querySelectorAll('.btn-cus');
+                for(let i = 0; i < a.length;i++){
+                    a[i].style = "display: block;";
+                }
+                document.querySelector('.fa-angle-left').style="display: none;"
+                document.querySelector('.fa-angle-right').style="display: block;"
+            });
         });
     </script>
 </body>
