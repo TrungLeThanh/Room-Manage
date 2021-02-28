@@ -86,6 +86,7 @@
     font-size:25px;
     transition: 0.8s;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 
 .fa-angle-left{
@@ -94,6 +95,7 @@
     transition: 0.8s;
     padding-top: 10px;
     display:none;
+    cursor: pointer;
 }
 
 /* .fa-angle-right:hover{
