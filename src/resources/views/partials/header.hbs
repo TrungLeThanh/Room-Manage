@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +17,7 @@
                     <img id="logo" src="/image/logo.png" style="width: 160px; height: 35px; color: white;">
                 </a>
             </div>
-            <div id="mainListDiv" class="main_list">
+            <div id="mainListDiv" class="main_list main_list_sub">
                 <ul class="navlinks">
                     <li><a href="/" class="a">Home</a></li>
                     <li><a href="/manage" class="a">Manage</a></li>
@@ -38,7 +38,7 @@
 
     <script>
         $(window).scroll(function() {
-            if ($(document).scrollTop() > 80) {
+            if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
                 var c = document.querySelectorAll(".a");
                 for(var i = 0; i < c.length;i++){

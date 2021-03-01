@@ -11,6 +11,7 @@
     letter-spacing: 1px;
 }
 
+
 .nav div.logo {
     float: left;
     width: auto;
@@ -312,7 +313,10 @@
 
 .affix {
     padding: 0;
-    background:#fff;
+    /* background:rgb(230, 230, 230);
+    box-shadow: 4px 4px 4px rgb(255, 255, 255); */
+    background:linear-gradient(to right,rgb(255, 255, 255) 20%,rgb(167, 167, 167) 100%);
+
 }
 
 
