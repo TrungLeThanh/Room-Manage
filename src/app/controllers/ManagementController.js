@@ -1,3 +1,5 @@
+const Infomation = require('../models/Infomation');
+const {multipleMongoooseToObject} = require('../../util/mongoose');
 
 class ManagementController{
     index (req, res) {
