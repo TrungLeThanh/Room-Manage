@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+
+nav{
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+    position:absolute;
+    display: flex;
+}
+
+.nav-sub{
+    width: 85%;
+    height: 5vh;
+    margin-left: 15%;
+    background-color:rgb(224, 216, 216);
+}
+

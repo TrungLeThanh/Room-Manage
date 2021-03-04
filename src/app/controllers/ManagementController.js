@@ -7,7 +7,9 @@ class ManagementController{
     }
 
     features(req, res) {
-        res.render('feature');
+        res.render('feature',{
+            isFeature: true,
+        });
     }
 }
 
