@@ -12,16 +12,56 @@
 
 nav{
     width: 15%;
+    color: #fff;
     height: 100vh;
-    background-color: rgb(15, 15, 15);
+    background-color: #15202c;
     position:absolute;
     display: flex;
+    /* box-shadow: 2px 2px 2px rgb(47, 80, 117); */
+    flex-direction: column;
 }
 
+/* SUB */
 .nav-sub{
     width: 85%;
-    height: 5vh;
+    height: 60px;
     margin-left: 15%;
-    background-color:rgb(224, 216, 216);
+    background-color:#fff;
+    display: flex;
+    /* justify-content: flex-end; */
+    line-height: 60px;
 }
+
+.left{
+    width: 20%;
+    height: 60px;
+}
+
+#logo{
+    position: absolute;
+    width: 150px;
+    padding: 15px 0 0 15px;
+}
+
+.right{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 7%;
+}
+
+.fa-user-circle{
+    padding:  18px 10px 0 0;
+    cursor: pointer;
+}
+
+.fa-caret-down{
+    padding:  25px 0 0 10px;
+    cursor: pointer;
+}
+
+
+/* main */
 
