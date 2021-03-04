@@ -12,13 +12,15 @@
 
 nav{
     width: 15%;
-    color: #fff;
+    color: rgb(197, 197, 197);
     height: 100vh;
     background-color: #15202c;
     position:absolute;
     display: flex;
     /* box-shadow: 2px 2px 2px rgb(47, 80, 117); */
     flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* SUB */
@@ -39,8 +41,8 @@ nav{
 
 #logo{
     position: absolute;
-    width: 150px;
-    padding: 15px 0 0 15px;
+    width: 170px;
+    padding: 15px 0 0 35px;
 }
 
 .right{
@@ -65,3 +67,12 @@ nav{
 
 /* main */
 
+.top{
+    width:100%;
+    height: 60px;
+    border-bottom:  1px solid #fff;
+}
+
+.top h6{
+    line-height: 75px;
+}
