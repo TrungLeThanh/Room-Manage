@@ -26,11 +26,21 @@
             </div>
             <div class="middle">
                 <ul class="click__active">
-                    <li class="active"><a href="/manage/general/"><i class="fas fa-book"></i>&nbsp;&nbsp; General info</a></li>
-                    <li class=""><a href=""><i class="fas fa-user-check"></i>&nbsp; Tenants info</a></li>
-                    <li class=""><a href=""><i class="fas fa-file-signature"></i>&nbsp; Contract</a></li>
-                    <li class=""><a href=""><i class="fas fa-file-invoice-dollar"></i>&nbsp;&nbsp; Invoices</a></li>
-                    <li class=""><a href=""><i class="fas fa-address-card"></i>&nbsp; Declare</a></li>
+                    <a href="/manage/general">
+                        <li class="active"><i class="fas fa-book"></i>&nbsp;&nbsp; General info</li>
+                    </a>
+                    <a href="/manage/general">
+                        <li class=""><i class="fas fa-user-check"></i>&nbsp; Tenants info</li>
+                    </a>
+                    <a href="/manage/general">
+                        <li class=""><i class="fas fa-file-signature"></i>&nbsp; Contract</li>
+                    </a>
+                    <a href="/manage/general">
+                        <li class=""><i class="fas fa-file-invoice-dollar"></i>&nbsp;&nbsp; Invoices</li>
+                    </a>
+                    <a href="/">
+                        <li class=""><i class="fas fa-address-card"></i>&nbsp; Declare</li>
+                    </a>
                 </ul>
             </div>
         </nav>
@@ -41,8 +51,8 @@
     
     <script>
         $(document).ready(function(){
-            $('.click__active li a').click(function(e){
-                $('.click__active li.active').removeClass('active');
+            $('.middle ul li a').click(function(e){
+                $('.middle ul a li.active').removeClass('active');
                 var $parent = $(this).parent();
                 $parent.addClass('active');
                 e.preventDefault();
