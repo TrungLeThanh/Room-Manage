@@ -22,14 +22,33 @@
         </div>
         <nav>
             <div class="top">
-                <h6>MANAGE ROOMS</h6>
+                <a href="/manage"><h6><i class="fas fa-house-user"></i>&nbsp;&nbsp; MANAGE ROOMS</h6></a>
             </div>
-            <div class="midle">
-
+            <div class="middle">
+                <ul class="click__active">
+                    <li class="active"><a href="/manage/feature/"><i class="fas fa-book"></i>&nbsp;&nbsp; General info</a></li>
+                    <li class=""><a href=""><i class="fas fa-user-check"></i>&nbsp; Tenants info</a></li>
+                    <li class=""><a href=""><i class="fas fa-file-signature"></i>&nbsp; Contract</a></li>
+                    <li class=""><a href=""><i class="fas fa-file-invoice-dollar"></i>&nbsp;&nbsp; Invoices</a></li>
+                    <li class=""><a href=""><i class="fas fa-address-card"></i>&nbsp; Declare</a></li>
+                </ul>
             </div>
         </nav>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    {{!-- <script src="js/scripts.js"></script> --}}
     
+    <script>
+        $(document).ready(function(){
+            $('.click__active li a').click(function(e){
+                $('.click__active li.active').removeClass('active');
+                var $parent = $(this).parent();
+                $parent.addClass('active');
+                e.preventDefault();
+            })
+        })
+    </script>
     
 </body>
 </html>

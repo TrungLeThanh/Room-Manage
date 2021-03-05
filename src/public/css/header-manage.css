@@ -12,7 +12,6 @@
 
 nav{
     width: 15%;
-    color: rgb(197, 197, 197);
     height: 100vh;
     background-color: #15202c;
     position:absolute;
@@ -67,6 +66,7 @@ nav{
 
 /* main */
 
+
 .top{
     width:100%;
     height: 60px;
@@ -75,4 +75,41 @@ nav{
 
 .top h6{
     line-height: 75px;
+}
+
+.top a{
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+}
+
+.middle{
+    width: 100%;
+    height: 700px;
+    padding-left: 10px;
+}
+
+.middle ul li{
+    list-style: none;
+    border-bottom: 0.5px solid rgb(117, 116, 116);
+    width: 100%;
+    height: 40px;
+    line-height: 50px;
+    cursor: pointer;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.middle ul li a{
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+}
+
+.middle ul li:hover{
+    background-color: #202f3f;
+    border-left:  3px solid rgb(134, 134, 134);
+}
+
+.active{
+    background-color: #202f3f;
+    border-left:  3px solid rgb(134, 134, 134);
 }
