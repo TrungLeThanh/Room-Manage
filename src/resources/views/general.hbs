@@ -37,7 +37,7 @@
                             <td>{{this.room_number}}</td>
                             <td>{{this.room_empty}}</td>
                             <td>
-                                <a href="/manage/room_manage/{{this._id}}/edit"><button class="btn btn-primary center-block"><i class="fas fa-pencil-alt"></i></button> </a>
+                                {{!-- <a href="/manage/room_manage/{{this._id}}/edit"><button class="btn btn-primary center-block"><i class="fas fa-pencil-alt"></i></button> </a> --}}
                                 <a href="" data-id="{{this._id}}" data-toggle="modal" data-target="#delete-course-modal"><button class="btn btn-danger center-block">&#10007;</button></a>
                             </td>
                             <td><a href="/manage/room_manage/function">Chi tiết</a></td>
@@ -85,7 +85,7 @@
             })
 
             btnDeleteRoom.onclick = function(){
-                deleteForm.action = '/manage/room_manage/' + roomId + '?_method=DELETE';
+                deleteForm.action = '/manage/general/' + roomId + '?_method=DELETE';
                 deleteForm.submit();
             }
             

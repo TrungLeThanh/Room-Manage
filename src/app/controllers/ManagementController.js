@@ -28,6 +28,13 @@ class ManagementController{
             .catch(err=>{
         });
     }
+
+
+    destroy(req, res, next){
+        General.deleteOne({_id: req.params.id})
+        .then(()=>res.redirect('back'))
+        .catch(next);
+    }
 }
 
 module.exports = new ManagementController;
