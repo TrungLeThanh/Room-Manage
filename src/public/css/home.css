@@ -17,6 +17,14 @@
     background-position: center;
 }
 
+.link{
+    color: #ffc107;
+}
+
+.link:hover{
+    color: black;
+}
+
 .line-1{
     font-size:35px;
     color: #FCFCFC;
