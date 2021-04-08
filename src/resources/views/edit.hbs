@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/edit.css">
+</head>
+<body>
+    <div class="container1">
+        <div class="mt-4 ml-1">
+            <h3>Chỉnh sửa Thông tin</h3>
+            <form method="POST" action="/manage/room_manage/{{manage._id}}?_method=PUT">
+                <div class="form-group">
+                    <label for="name_inn">Tên phòng trọ</label>
+                    <input type="text" class="form-control" value="{{manage.name_inn}}" id="exampleInputEmail1" name="name_inn">
+                </div>
+                <div class="form-group">
+                    <label for="name_owner">Tên chủ trọ</label>
+                    <input type="text" class="form-control" value="{{manage.name_owner}}" id="exampleInputEmail1" name="name_owner">
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" class="form-control" value="{{manage.address}}" id="exampleInputEmail1" name="address">
+                </div>
+                <div class="form-group">
+                    <label for="phone">SĐT</label>
+                    <input type="text" class="form-control" value="{{manage.phone}}" id="exampleInputEmail1" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="room_number">Số phòng</label>
+                    <input type="text" class="form-control" value="{{manage.room_number}}" id="exampleInputEmail1" name="room_number">
+                </div>
+                <div class="form-group">
+                    <label for="room_empty">Số phòng trống</label>
+                    <input type="text" class="form-control" value="{{manage.room_empty}}" id="exampleInputEmail1" name="room_empty">
+                </div>
+                <button type="submit" class="btn btn-primary">Lưu lại</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <div class="container-fluit">
+        <div class="main">
+            {{!-- <div class="main__content">
+                <table class="table custab table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name inn </th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Phone number</th>
+                            <th scope="col">Room number</th>
+                            <th scope="col">Room empty</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Quản lý</th>
+                        </tr>
+                    </thead>
+                {{#each generals}}
+                    <tbody>
+                        <tr>
+                            <td>{{sum @index 1}}</td>
+                            <td>{{this.name_inn}}</td>
+                            <td>{{this.address}}</td>
+                            <td>{{this.phone}}</td>
+                            <td>{{this.room_number}}</td>
+                            <td>{{this.room_empty}}</td>
+                            <td>
+                                <a href="" data-id="{{this._id}}" data-toggle="modal" data-target="#delete-course-modal"><button class="btn btn-danger center-block">&#10007;</button></a>
+                            </td>
+                            <td><a href="/manage/room_manage/function">Chi tiết</a></td>
+                        </tr>
+                    </tbody>
+                {{/each}}
+            </table>
+            </div> --}}
+            <img style="width: 1000px; height: 500px;" src="https://ninoapp.vn/assets/images/nino-feature2.png" alt="">
+        </div>
+    </div>
+    
+    {{!-- <div class="modal" tabindex="-1" id="delete-course-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Delete Room</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <p>Do you want delete room?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="btn-delete-room">Delete</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div> --}}
+
+    {{!-- <form method="POST" name="delete-room-form"></form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var btnDeleteRoom = document.getElementById('btn-delete-room');
+            var roomId;
+            var deleteForm = document.forms['delete-room-form'];
+
+            $('#delete-course-modal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                roomId = button.data('id');
+                console.log(roomId);
+            })
+
+            btnDeleteRoom.onclick = function(){
+                deleteForm.action = '/manage/general/' + roomId + '?_method=DELETE';
+                deleteForm.submit();
+            }
+            
+        });
+    </script> --}}
+</body>
+</html>
